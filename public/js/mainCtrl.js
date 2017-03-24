@@ -6,6 +6,7 @@ myApp.controller('mainCtrl', ['$scope', 'mainService', function($scope, mainServ
 			$scope.users = resonse.data;
 		});
 	};
+	$scope.getUsers();
 
 	$scope.deleteUser = function(id){
 		mainService.deleteUser(id);
