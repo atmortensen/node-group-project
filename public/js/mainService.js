@@ -10,11 +10,8 @@ app.service('mainService', ['$http', function($http){
 
 	this.deleteUser = function(id){
 		return $http({
-			url: '/api/users',
-			method: 'DELETE',
-			data: {
-				id: id
-			}
+			url: '/api/users/'+ id,
+			method: 'DELETE'
 		});
 	};
 

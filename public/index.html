@@ -11,15 +11,21 @@
 </header>
 <main>
     <div class="list-div">
-        <ul class="listOfItems">
-            <li class="lineItem" ng-repeat="user in users">
-                <button ng-click="deleteUser(user.id)" class="removeItem">Delete Item</button>
-            </li><br/>
+        <ul class="listOfItems" ng-repeat="user in users">
+            <img ng-src="user.img">
+                <li>Name: {{user.name}}</li>
+                <li>Address: {[user.address.street}},{{user.address.suite}}, {{user.address.city}}, {{user.address.zipcode}}</li>
+                <li>Phone: {{user.phone}}</li>
+                <li>{{user.email}}</li>
+                <li>Website: {{user.website}}</li>
+                <li>Company: {{user.company.name}}</li>
+            <button ng-click="deleteUser(user.id)" class="removeItem">Delete Item</button>
         </ul>
     </div>
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script src="app.js"></script>
 <script type="text/javascript" src="js/mainCtrl.js"></script>
 <script type="text/javascript" src="js/mainService.js"></script>
 </body>
