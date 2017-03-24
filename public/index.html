@@ -14,7 +14,7 @@
         <ul class="listOfItems" ng-repeat="user in users">
             <img ng-src="{{user.img}}">
                 <li>Name: {{user.name}}</li>
-                <li>Address: {[user.address.street}},{{user.address.suite}}, {{user.address.city}}, {{user.address.zipcode}}</li>
+                <li>Address: {{user.address.street}},{{user.address.suite}}, {{user.address.city}}, {{user.address.zipcode}}</li>
                 <li>Phone: {{user.phone}}</li>
                 <li>Email: {{user.email}}</li>
                 <li>Website: {{user.website}}</li>
