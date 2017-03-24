@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body ng-controller="mainCtrl">
 <header>
@@ -12,7 +12,9 @@
 <main>
     <div class="list-div">
         <ul class="listOfItems">
-            <li class="lineItem" ng-repeat="item in list"></li><br/>
+            <li class="lineItem" ng-repeat="user in list">
+                <button ng-click="deleteUser($index)" class="removeItem">Delete Item</button>
+            </li><br/>
         </ul>
     </div>
 </main>
