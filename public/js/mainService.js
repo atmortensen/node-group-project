@@ -1,5 +1,5 @@
 // SERVICE
-app.service('mainService', ['$http', function($http){
+myApp.service('mainService', ['$http', function($http){
 
 	this.getUsers = function(){
 		return $http({
