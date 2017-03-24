@@ -10,6 +10,7 @@ myApp.controller('mainCtrl', ['$scope', 'mainService', function($scope, mainServ
 
 	$scope.deleteUser = function(id){
 		mainService.deleteUser(id);
+		$scope.getUsers();
 	};
 
 }]);
